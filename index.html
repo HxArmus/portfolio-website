@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Parth | Android & UI/UX Specialist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/spline-runtime@1.0.2/dist/runtime.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-rocket"></i>
+                <span>DevParth</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#about" class="about">About</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+                <span>Dark Mode</span>
+            </div>
+        </div>
+    </header>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Floating Shapes -->
+    <img src="https://cdn-icons-png.flaticon.com/512/4661/4661320.png" class="floating-logo" alt="floating shape">
+    
+    
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Dev Parth</span></h1>
+            <p class="tagline">Android Developer | UI/UX Designer | Problem Solver</p>
+            
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="Dev Parth (1).pdf" class="btn btn-secondary" download>Download Resume</a>
+            </div>
+        </div>
+        
+        <!-- Spline 3D Scene -->
+        <div class="spline-container">
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.2/build/spline-viewer.js"></script>
+            <spline-viewer loading-anim url="https://prod.spline.design/Br3ec7ZbUNAq5n0H/scene.splinecode"></spline-viewer>
+        </div>
+    </div>
+    
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>About Me</h2>
+                
+                <div class="typing-text" id="typed-text"></div>
+                
+                <div class="facts-grid">
+                    <div class="fact-item">
+                        <h3><i class="fas fa-user-graduate"></i> Education</h3>
+                        <p>B.Tech CSE at MMMUT Gorakhpur (2028)</p>
+                    </div>
+                    
+                    <div class="fact-item">
+                        <h3><i class="fas fa-code"></i> Expertise</h3>
+                        <p>Android Dev • UI/UX • Full Stack</p>
+                    </div>
+                    
+                    <div class="fact-item">
+                        <h3><i class="fas fa-heart"></i> Passion</h3>
+                        <p>Building apps that solve real problems</p>
+                    </div>
+                    
+                    <div class="fact-item">
+                        <h3><i class="fas fa-basketball-ball"></i> Hobbies</h3>
+                        <p>Basketball • Poetry • Ethical Hacking</p>
+                    </div>
+                </div>
+                <div class="social-links">
+    <a href="https://github.com/Devparth7-coder" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/dev-parth-360a68274/" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://x.com/Dev_Parth7" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://instagram.com/devparth_7" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+</div>
+                <a href="Dev Parth (1).pdf" class="btn btn-primary" download>
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+            
+            <div class="avatar-container">
+                <spline-viewer loading-anim url="https://prod.spline.design/Br3ec7ZbUNAq5n0H/scene.splinecode"></spline-viewer>
+            </div>
+            
+        </div>
+        
+    </section>
+    <section class="education" id="education">
+        <h2 class="section-title">Education Qualification</h2>
+        
+        <div class="timeline">
+            <!-- Item 1 -->
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>B.Tech Computer Science</h3>
+                            <p>Madan Mohan Malaviya University of Technology</p>
+                            <span class="timeline-date">2024 - 2028 (Expected)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-details">
+                        <div class="detail-item">
+                            <i class="fas fa-star"></i>
+                            <span>Current GPA: 8.5/10</span>
+                        </div>
+                        <div class="gpa-bar">
+                            <div class="gpa-progress" style="width: 85%"></div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-code"></i>
+                            <span>Relevant Coursework: Data Structures, Algorithms, DBMS, Android Development</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>Activities: Coding Club Core Member, Hackathon Participant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Item 2 -->
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div class="timeline-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Higher Secondary (12th)</h3>
+                            <p>Army Public School, Gorakhpur</p>
+                            <span class="timeline-date">2022 - 2023</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-details">
+                        <div class="detail-item">
+                            <i class="fas fa-star"></i>
+                            <span>Final Grade: 71.00%</span>
+                        </div>
+                        <div class="gpa-bar">
+                            <div class="gpa-progress" style="width: 71%"></div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-flask"></i>
+                            <span>Stream: Physics, Chemistry, Mathematics, Computer Science</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-trophy"></i>
+                            <span>Achievements: Organized quiz competitions, Basketball team captain</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Item 3 -->
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div class="timeline-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>High School (10th)</h3>
+                            <p>Army Public School, Gorakhpur</p>
+                            <span class="timeline-date">2020 - 2021</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-details">
+                        <div class="detail-item">
+                            <i class="fas fa-star"></i>
+                            <span>Final Grade: 83.40%</span>
+                        </div>
+                        <div class="gpa-bar">
+                            <div class="gpa-progress" style="width: 83.4%"></div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Activities: Creative writing, Science exhibitions</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-medal"></i>
+                            <span>Achievements: Poetry competition winner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="career-evolution" id="experience">
+        <h1 class="dynamic-header"><span class="dynamic-header-text">Career Evolution</span></h1>
+        
+        <div class="experience-deck">
+            <!-- Card 1 -->
+            <div class="experience-card">
+                <div class="company-header">
+                    <div class="logo-container">
+                        <img src="https://logo.clearbit.com/bluestock.com" alt="Bluestock Fintech" onerror="this.src='https://via.placeholder.com/60'">
+                    </div>
+                    <div class="position-info">
+                        <h3>Software Developer Intern</h3>
+                        <p>Bluestock Fintech</p>
+                    </div>
+                </div>
+                
+                <span class="duration">Nov 2024 - Jan 2025</span>
+                
+                <div class="achievements">
+                    <div class="achievement">
+                        Developed secure financial software solutions, improving efficiency by 20%
+                    </div>
+                    <div class="achievement">
+                        Optimized backend operations using Java and SQL, reducing response time by 15%
+                    </div>
+                    <div class="achievement">
+                        Designed API integrations for real-time data processing
+                    </div>
+                </div>
+                
+                <div class="tech-stack">
+                    <span class="tech-pill">Java</span>
+                    <span class="tech-pill">Spring Boot</span>
+                    <span class="tech-pill">MySQL</span>
+                    <span class="tech-pill">REST API</span>
+                </div>
+                
+                <a href="https://bluestock.com" target="_blank" class="company-link">
+                    <i class="fas fa-external-link-alt"></i> Company Site
+                </a>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="experience-card">
+                <div class="company-header">
+                    <div class="logo-container">
+                        <img src="https://logo.clearbit.com/mindshift.tech" alt="Mindshift Technologies" onerror="this.src='https://via.placeholder.com/60'">
+                    </div>
+                    <div class="position-info">
+                        <h3>Android Developer Intern</h3>
+                        <p>Mindshift Technologies</p>
+                    </div>
+                </div>
+                
+                <span class="duration">Nov 2024 - Dec 2024</span>
+                
+                <div class="achievements">
+                    <div class="achievement">
+                        Developed 3+ Android apps using Java/Kotlin, reducing crashes by 30%
+                    </div>
+                    <div class="achievement">
+                        Integrated Firebase for authentication and real-time database
+                    </div>
+                    <div class="achievement">
+                        Strengthened transaction security with payment gateway integration
+                    </div>
+                </div>
+                
+                <div class="tech-stack">
+                    <span class="tech-pill">Kotlin</span>
+                    <span class="tech-pill">Android SDK</span>
+                    <span class="tech-pill">Firebase</span>
+                    <span class="tech-pill">MVVM</span>
+                </div>
+                
+                <a href="https://mindshift.tech" target="_blank" class="company-link">
+                    <i class="fas fa-external-link-alt"></i> Company Site
+                </a>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="experience-card">
+                <div class="company-header">
+                    <div class="logo-container">
+                        <img src="https://logo.clearbit.com/hackerrank.com" alt="HackerRank" onerror="this.src='https://via.placeholder.com/60'">
+                    </div>
+                    <div class="position-info">
+                        <h3>Software Engineer Intern</h3>
+                        <p>HackerRank</p>
+                    </div>
+                </div>
+                
+                <span class="duration">Jul 2024 - Oct 2024</span>
+                
+                <div class="achievements">
+                    <div class="achievement">
+                        Engineered scalable algorithms for coding assessments
+                    </div>
+                    <div class="achievement">
+                        Enhanced platform features, boosting user engagement by 40%
+                    </div>
+                    <div class="achievement">
+                        Contributed to open-source problem sets used by thousands
+                    </div>
+                </div>
+                
+                <div class="tech-stack">
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">Django</span>
+                    <span class="tech-pill">React</span>
+                    <span class="tech-pill">Algorithms</span>
+                </div>
+                
+                <a href="https://hackerrank.com" target="_blank" class="company-link">
+                    <i class="fas fa-external-link-alt"></i> Company Site
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="project-showcase" id="projects">
+        <h2 class="showcase-header">Projects Showcase</h2>
+        
+        <div class="project-gallery">
+            <!-- Project 1 -->
+            <div class="project-tile">
+                <div class="project-preview">
+                    <!-- Static Preview -->
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Blockchain Voting" 
+                         class="static-preview">
+                    
+                    <!-- GIF Preview -->
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDZzY3NkY3Z4d2RlZ3N5cW5xZ3J0eWxqY2RjbGN6dGJtZ2JzZnF5eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tn33aiTi1jkl6H6/giphy.gif" 
+                         alt="Blockchain Demo" 
+                         class="dynamic-preview">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-name">Secure Blockchain Voting</h3>
+                    <p class="project-description">Tamper-proof e-voting platform using AI facial recognition and blockchain technology for secure elections.</p>
+                    
+                    <div class="tech-badges">
+                        <span class="tech-label"><i class="fab fa-python"></i> Flask</span>
+                        <span class="tech-label"><i class="fas fa-link"></i> Blockchain</span>
+                        <span class="tech-label"><i class="fas fa-robot"></i> DeepFace</span>
+                        <span class="tech-label"><i class="fas fa-database"></i> SQLite</span>
+                    </div>
+                    
+                    <div class="project-cta">
+                        <a href="https://your-live-demo.com" target="_blank" class="demo-button">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Devparth7-coder/Revolutionizing-Voting-with-Faster-and-Secure-Automated-Verification" target="_blank" class="code-button">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-tile">
+                <div class="project-preview">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" 
+                         alt="Bullet Dodger Game" 
+                         class="static-preview">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDZzY3NkY3Z4d2RlZ3N5cW5xZ3J0eWxqY2RjbGN6dGJtZ2JzZnF5eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tn33aiTi1jkl6H6/giphy.gif" 
+                         alt="Game Demo" 
+                         class="dynamic-preview">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-name">Bullet Dodger 2D</h3>
+                    <p class="project-description">Addictive survival game with progressive difficulty and smooth canvas animations.</p>
+                    
+                    <div class="tech-badges">
+                        <span class="tech-label"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tech-label"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="tech-label"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-label"><i class="fas fa-gamepad"></i> Canvas API</span>
+                    </div>
+                    
+                    <div class="project-cta">
+                        <a href="https://devparth7-coder.github.io/Bullet-Dodger-2D/" target="_blank" class="demo-button">
+                            <i class="fas fa-gamepad"></i> Play Now
+                        </a>
+                        <a href="https://github.com/Devparth7-coder/Bullet-Dodger-2D" target="_blank" class="code-button">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-tile">
+                <div class="project-preview">
+                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1636&q=80" 
+                         alt="AI Art Generator" 
+                         class="static-preview">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDZzY3NkY3Z4d2RlZ3N5cW5xZ3J0eWxqY2RjbGN6dGJtZ2JzZnF5eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tn33aiTi1jkl6H6/giphy.gif" 
+                         alt="AI Art Demo" 
+                         class="dynamic-preview">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-name">AI Art Generator</h3>
+                    <p class="project-description">Experimental tool that creates unique digital artwork using algorithmic patterns.</p>
+                    
+                    <div class="tech-badges">
+                        <span class="tech-label"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-label"><i class="fas fa-brain"></i> Algorithmic Art</span>
+                        <span class="tech-label"><i class="fas fa-palette"></i> Generative Design</span>
+                    </div>
+                    
+                    <div class="project-cta">
+                        <a href="https://devparth7-coder.github.io/ai-art-work/" target="_blank" class="demo-button">
+                            <i class="fas fa-magic"></i> Try It
+                        </a>
+                        <a href="https://github.com/Devparth7-coder/ai-art-work" target="_blank" class="code-button">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-tile">
+                <div class="project-preview">
+                    <img src="premium_photo-1661872817492-fd0c30404d74.avif" 
+                         alt="Bullet Dodger Game" 
+                         class="static-preview">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3a28xODU4Njd3dDduOTdmdGV3Mng5MnFnd2VkOW1qanltdWduYm50bCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/zgduo4kWRRDVK/giphy.gif" 
+                         alt="Game Demo" 
+                         class="dynamic-preview">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-name">Hologram Effect</h3>
+                    <p class="project-description">Addictive survival game with progressive difficulty and smooth canvas animations.</p>
+                    
+                    <div class="tech-badges">
+                        <span class="tech-label"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tech-label"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="tech-label"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-label"><i class="fas fa-gamepad"></i> Canvas API</span>
+                    </div>
+                    
+                    <div class="project-cta">
+                        <a href="https://devparth7-coder.github.io/Hologram-Effect/" target="_blank" class="demo-button">
+                            <i class="fas fa-gamepad"></i> Play Now
+                        </a>
+                        <a href="https://github.com/Devparth7-coder/Hologram-Effect" target="_blank" class="code-button">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-tile">
+                <div class="project-preview">
+                    <img src="1_iXJUMHlXcYmyKRM_-JO8-g.png" 
+                         alt="Bullet Dodger Game" 
+                         class="static-preview">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzJ4aHB0anB1NjRvdTI1NzY3ZWJkdHI3NmVncHZoejJtdzNqYXN1NSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/10zxDv7Hv5RF9C/giphy.gif" 
+                         alt="Game Demo" 
+                         class="dynamic-preview">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-name">Matrix Rain Effect</h3>
+                    <p class="project-description">falling streams of green characters reminiscent of the iconic “digital rain” from The Matrix.</p>
+                    
+                    <div class="tech-badges">
+                        <span class="tech-label"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tech-label"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="tech-label"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-label"><i class="fas fa-gamepad"></i> Canvas API</span>
+                    </div>
+                    
+                    <div class="project-cta">
+                        <a href="https://devparth7-coder.github.io/matrixraineffect/" target="_blank" class="demo-button">
+                            <i class="fas fa-gamepad"></i> Play Now
+                        </a>
+                        <a href="https://github.com/Devparth7-coder/matrixraineffect" target="_blank" class="code-button">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-tile">
+                <div class="project-preview">
+                    <img src="istockphoto-2123149472-612x612.webp" 
+                         alt="Bullet Dodger Game" 
+                         class="static-preview">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDNyenN0NDJiZGV6c2hvdGZ0eWZiY2R1bHFtYzgyNmU4Z3o0MTY5YSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0MYCl09TyHtijyAo/giphy.gif" 
+                         alt="Game Demo" 
+                         class="dynamic-preview">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-name">Web Development</h3>
+                    <p class="project-description">falling streams of green characters reminiscent of the iconic “digital rain” from The Matrix.</p>
+                    
+                    <div class="tech-badges">
+                        <span class="tech-label"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tech-label"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="tech-label"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-label"><i class="fas fa-gamepad"></i> Canvas API</span>
+                    </div>
+                    
+                    <div class="project-cta">
+                        <a href="https://devparth7-coder.github.io/WebComp/" target="_blank" class="demo-button">
+                            <i class="fas fa-gamepad"></i> Play Now
+                        </a>
+                        <a href="https://github.com/Devparth7-coder/WebComp" target="_blank" class="code-button">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-tile">
+                <div class="project-preview">
+                    <img src="istockphoto-2169040453-612x612.webp"
+                         alt="Bullet Dodger Game" 
+                         class="static-preview">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGxqcTd0bjBtYTd4cHNocnc1bGxqdThqY3NvNWZ6MW1qeHY0NGgwbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/U3ZouVtrKCWXk4l9rO/giphy.gif" 
+                         alt="Game Demo" 
+                         class="dynamic-preview">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-name">Editor</h3>
+                    <p class="project-description">falling streams of green characters reminiscent of the iconic “digital rain” from The Matrix.</p>
+                    
+                    <div class="tech-badges">
+                        <span class="tech-label"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tech-label"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="tech-label"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-label"><i class="fas fa-gamepad"></i> Canvas API</span>
+                    </div>
+                    
+                    <div class="project-cta">
+                        <a href="https://devparth7-coder.github.io/Editor-/" target="_blank" class="demo-button">
+                            <i class="fas fa-gamepad"></i> Play Now
+                        </a>
+                        <a href="https://github.com/Devparth7-coder/Editor-" target="_blank" class="code-button">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-tile">
+                <div class="project-preview">
+                    <img src="istockphoto-2210688897-612x612.webp"
+                         alt="Bullet Dodger Game" 
+                         class="static-preview">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzJ4aHB0anB1NjRvdTI1NzY3ZWJkdHI3NmVncHZoejJtdzNqYXN1NSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/26tn33aiTi1jkl6H6/giphy.gif" 
+                         alt="Game Demo" 
+                         class="dynamic-preview">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-name">Text To Voice</h3>
+                    <p class="project-description">falling streams of green characters reminiscent of the iconic “digital rain” from The Matrix.</p>
+                    
+                    <div class="tech-badges">
+                        <span class="tech-label"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tech-label"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="tech-label"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-label"><i class="fas fa-gamepad"></i> Canvas API</span>
+                    </div>
+                    
+                    <div class="project-cta">
+                        <a href="https://devparth7-coder.github.io/texttovoice/" target="_blank" class="demo-button">
+                            <i class="fas fa-gamepad"></i> Play Now
+                        </a>
+                        <a href="https://github.com/Devparth7-coder/texttovoice" target="_blank" class="code-button">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills-section" id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="skill-header">
+                    <div class="skill-icon">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <h3 class="skill-title">Android Development</h3>
+                </div>
+                <p class="skill-description">
+                    Android development refers to the process of creating software applications (apps) specifically designed to run on devices powered by the Android operating system
+                </p>
+                
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>Kotlin</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-level="90"></div>
+                    </div>
+                </div>
+                
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>Jetpack Compose</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-level="85"></div>
+                    </div>
+                </div>
+                
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>MVVM Architecture</span>
+                        <span>88%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-level="88"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-header">
+                    <div class="skill-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="skill-title">UI/UX Design</h3>
+                </div>
+                <p class="skill-description">
+                   UI makes a design visually appealing, while UX ensures it is simple to navigate and functional. By working together, they create digital products that people find attractive and easy to use.
+                </p>
+                
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>Canvas</span>
+                        <span>92%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-level="92"></div>
+                    </div>
+                </div>
+                
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>Material Design</span>
+                        <span>87%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-level="87"></div>
+                    </div>
+                </div>
+                
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>User Research</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-level="80"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-header">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-title">Web Development</h3>
+                </div>
+                <p class="skill-description">
+                    Web development is the process of creating, building, and maintaining websites and web applications, encompassing both front-end and back-end development
+                </p>
+                
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>HTML5</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-level="95"></div>
+                    </div>
+                </div>
+                
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>JavaScript</span>
+                        <span>78%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-level="78"></div>
+                    </div>
+                </div>
+                
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-level="90"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-title">Backend </h3>
+                </div>
+                <p class="skill-description">
+                    In computing, backend refers to the parts of a computer system or application that are not directly interacted with by the user, such as databases, servers, and the logic that powers the application
+                </p>
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>Node.js</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-level="60"></div>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>Python</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-level="90"></div>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>Flask</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-level="85"></div>
+                    </div>
+                </div>
+                
+            </div>
+        <div class="skill-card">
+                <div class="skill-header">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-title">DataBase </h3>
+                </div>
+                <p class="skill-description">
+                    It's designed to facilitate the storage, retrieval, management, and updating of data. Databases are often managed by a Database Management System (DBMS). 
+                </p>
+                
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>MYSQL</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-level="90"></div>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>SQLite</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-level="90"></div>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>PostgreSQL</span>
+                        <span>55%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-level="55"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- Radar Chart for Soft Skills -->
+        <div class="chart-container">
+            <canvas id="radarChart"></canvas>
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-header">Contact Me</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card floating" style="animation-delay: 0.2s;">
+                        <div class="contact-card-header">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3 class="contact-title">Email Me</h3>
+                        </div>
+                        <p class="contact-text">
+                            Feel free to reach out for collaborations, job opportunities, or just to say hello!
+                        </p>
+                        <a href="mailto:hello@devparth.com" class="contact-link">
+                            hello@devparth.com
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-card floating" style="animation-delay: 0.4s;">
+                        <div class="contact-card-header">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3 class="contact-title">Location</h3>
+                        </div>
+                        <p class="contact-text">
+                            Based in San Francisco, CA, but working with clients worldwide.
+                        </p>
+                        <a href="https://maps.google.com?q=San+Francisco" target="_blank" class="contact-link">
+                            View on Map
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-card floating" style="animation-delay: 0.6s;">
+                        <div class="contact-card-header">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3 class="contact-title">Availability</h3>
+                        </div>
+                        <p class="contact-text">
+                            Monday to Friday: 9am - 5pm PST<br>
+                            Weekends: Limited availability
+                        </p>
+                        <a href="#" class="contact-link">
+                            Book a Call
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <div class="success-message" id="successMessage">
+                        <i class="fas fa-check-circle"></i>
+                        Your message has been sent successfully! I'll get back to you soon.
+                    </div>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                            <div class="error-message">Please enter your name</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                            <div class="error-message">Please enter a valid email</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                            <div class="error-message">Please enter a subject</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                            <div class="error-message">Please enter your message</div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            Send Message
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>🚀 DevParth</h3>
+                    <p style="margin-top: 1rem; opacity: 0.8; line-height: 1.6;">
+                        Creating innovative solutions and pushing the boundaries of web and mobile development.
+                    </p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="education.html"></a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#web-dev">Web Development</a></li>
+                        <li><a href="#app-dev">App Development</a></li>
+                        <li><a href="#ui-design">UI/UX Design</a></li>
+                        <li><a href="#consulting">Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:hello@devparth.com">Email</a></li>
+                        <li><a href="#contact">Contact Form</a></li>
+                        <li><a href="https://github.com/Devparth7-coder" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/devparth/" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                &copy; 2023 Dev Parth. All rights reserved.
+                <br>
+                <a href="https://www.buymeacoffee.com/devparth" target="_blank" class="btn btn-secondary" style="margin-top: 1rem;">
+                    <i class="fas fa-coffee"></i> Buy Me a Coffee
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

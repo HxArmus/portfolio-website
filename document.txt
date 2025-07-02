@@ -1,0 +1,81 @@
+<div class="project-details">
+                    <h3 class="project-name">Editor</h3>
+                    <p class="project-description">A standalone HTML-based editor, perhaps using a <textarea> or a lightweight library to allow users to type and edit text/code.</p>
+                    
+                    <div class="tech-badges">
+                        <span class="tech-label"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tech-label"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="tech-label"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-label"><i class="fas fa-gamepad"></i> Canvas API</span>
+                    </div>
+                    
+                    <div class="project-cta">
+                        <a href="https://devparth7-coder.github.io/Editor-/" target="_blank" class="demo-button">
+                            <i class="fas fa-gamepad"></i> Play Now
+                        </a>
+                        <a href="https://github.com/Devparth7-coder/Editor-" target="_blank" class="code-button">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-tile">
+                <div class="project-preview">
+                    <img src="premium_photo-1661872817492-fd0c30404d74.avif" 
+                         alt="Bullet Dodger Game" 
+                         class="static-preview">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDNyenN0NDJiZGV6c2hvdGZ0eWZiY2R1bHFtYzgyNmU4Z3o0MTY5YSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0MYCl09TyHtijyAo/giphy.gif" 
+                         alt="Game Demo" 
+                         class="dynamic-preview">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-name">Text To Voice</h3>
+                    <p class="project-description">A basic HTML interface (index.html) that lets users type in text and play a synthesized voice.</p>
+                    
+                    <div class="tech-badges">
+                        <span class="tech-label"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tech-label"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="tech-label"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-label"><i class="fas fa-gamepad"></i> Web Speech API </span>
+                    </div>
+                    
+                    <div class="project-cta">
+                        <a href="https://devparth7-coder.github.io/texttovoice/" target="_blank" class="demo-button">
+                            <i class="fas fa-gamepad"></i> Play Now
+                        </a>
+                        <a href="https://github.com/Devparth7-coder/texttovoice" target="_blank" class="code-button">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-tile">
+                <div class="project-preview">
+                    <img src="premium_photo-1661872817492-fd0c30404d74.avif" 
+                         alt="Bullet Dodger Game" 
+                         class="static-preview">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDNyenN0NDJiZGV6c2hvdGZ0eWZiY2R1bHFtYzgyNmU4Z3o0MTY5YSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0MYCl09TyHtijyAo/giphy.gif" 
+                         alt="Game Demo" 
+                         class="dynamic-preview">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-name">Web Development</h3>
+                    <p class="project-description">UI Components & Layouts. Modern UI block collection for web development and smooth canvas animations.</p>
+                    
+                    <div class="tech-badges">
+                        <span class="tech-label"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tech-label"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="tech-label"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-label"><i class="fas fa-gamepad"></i> Canvas API</span>
+                    </div>
+                    
+                    <div class="project-cta">
+                        <a href="https://devparth7-coder.github.io/WebComp/" target="_blank" class="demo-button">
+                            <i class="fas fa-gamepad"></i> Play Now
+                        </a>
+                        <a href="https://github.com/Devparth7-coder/WebComp" target="_blank" class="code-button">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>

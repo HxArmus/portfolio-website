@@ -1,0 +1,349 @@
+:root {
+            --primary: #0A2463;
+            --secondary: #00D1CD;
+            --accent: #FF3E41;
+            --dark: #1E1E24;
+            --light: #F8F8FF;
+            --glass: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --glass-highlight: rgba(0, 209, 205, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .career-evolution {
+            padding: 8% 10%;
+            position: relative;
+        }
+        
+        /* Animated gradient text with clip-path */
+        .dynamic-header {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 4rem;
+            position: relative;
+            width: fit-content;
+        }
+        
+        .dynamic-header-text {
+            background: linear-gradient(
+                90deg,
+                var(--secondary),
+                var(--light),
+                var(--secondary)
+            );
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: gradientFlow 8s linear infinite;
+        }
+        
+        .dynamic-header::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary), transparent);
+            clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 0% 100%);
+        }
+        
+        /* 3D card container with perspective */
+        .experience-deck {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            perspective: 2000px;
+        }
+        
+        /* Glassmorphism card with 3D tilt effect */
+        .experience-card {
+            background: var(--glass);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            padding: 2rem;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform-style: preserve-3d;
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.1),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Holographic border effect */
+        .experience-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            padding: 1px;
+            background: linear-gradient(
+                135deg,
+                rgba(0, 209, 205, 0.4),
+                rgba(255, 255, 255, 0.1),
+                rgba(10, 36, 99, 0.4)
+            );
+            -webkit-mask: 
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+        
+        /* 3D tilt effect on mouse move */
+        .experience-card:hover {
+            transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+            box-shadow: 
+                0 15px 45px rgba(0, 209, 205, 0.2),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+            border-color: var(--secondary);
+        }
+        
+        /* Company header with floating logo */
+        .company-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .logo-container {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1.2rem;
+            box-shadow: 
+                0 4px 20px rgba(0, 0, 0, 0.2),
+                0 0 0 1px rgba(0, 209, 205, 0.3);
+            transition: transform 0.5s ease;
+        }
+        
+        .experience-card:hover .logo-container {
+            transform: translateY(-5px) rotate(5deg);
+        }
+        
+        .logo-container img {
+            width: 70%;
+            height: 70%;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3));
+        }
+        
+        .position-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.3rem;
+            background: linear-gradient(to right, var(--light), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .position-info p {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--secondary);
+            letter-spacing: 0.5px;
+        }
+        
+        /* Floating duration badge */
+        .duration {
+            display: inline-block;
+            background: var(--glass-highlight);
+            color: var(--secondary);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin: 0.5rem 0 1.5rem;
+            backdrop-filter: blur(5px);
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Animated achievement list */
+        .achievements {
+            margin: 1.5rem 0;
+            position: relative;
+        }
+        
+        .achievement {
+            display: flex;
+            gap: 0.8rem;
+            margin-bottom: 1rem;
+            padding-left: 1.8rem;
+            position: relative;
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: all 0.4s ease;
+        }
+        
+        .experience-card:hover .achievement {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .experience-card:hover .achievement:nth-child(1) { transition-delay: 0.1s; }
+        .experience-card:hover .achievement:nth-child(2) { transition-delay: 0.2s; }
+        .experience-card:hover .achievement:nth-child(3) { transition-delay: 0.3s; }
+        
+        .achievement::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 10px;
+            height: 10px;
+            background: var(--secondary);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--secondary);
+        }
+        
+        .achievement::after {
+            content: '';
+            position: absolute;
+            left: 4px;
+            top: 1.5rem;
+            bottom: -1rem;
+            width: 2px;
+            background: linear-gradient(
+                to bottom,
+                var(--secondary),
+                transparent
+            );
+        }
+        
+        /* Tech stack pills with gradient border */
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.7rem;
+            margin-top: 2rem;
+        }
+        
+        .tech-pill {
+            background: var(--glass-highlight);
+            color: var(--secondary);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .tech-pill::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50px;
+            padding: 1px;
+            background: linear-gradient(135deg, var(--secondary), transparent);
+            -webkit-mask: 
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            z-index: -1;
+        }
+        
+        /* Floating action button */
+        .company-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--light);
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 
+                0 2px 15px rgba(0, 209, 205, 0.3),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .company-link::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to bottom right,
+                rgba(255, 255, 255, 0.3),
+                rgba(255, 255, 255, 0)
+            );
+            transform: rotate(30deg);
+            transition: all 0.5s ease;
+        }
+        
+        .company-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 
+                0 5px 20px rgba(0, 209, 205, 0.4),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+        }
+        
+        .company-link:hover::before {
+            left: 100%;
+        }
+        
+        /* Background particles */
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: var(--secondary);
+            opacity: 0.3;
+            filter: blur(1px);
+        }
+        
+        /* Animations */
+        @keyframes gradientFlow {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .career-evolution {
+                padding: 15% 8%;
+            }
+            
+            .experience-deck {
+                grid-template-columns: 1fr;
+            }
+            
+            .experience-card {
+                padding: 1.5rem;
+            }
+        }
